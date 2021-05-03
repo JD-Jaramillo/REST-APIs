@@ -1,0 +1,30 @@
+{
+  "name": "rest-apis",
+  "version": "1.0.0",
+  "description": "Node.js Restful CRUD API with Node.js, Express and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JD-Jaramillo/REST-APIs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
+  "author": "JD-Jaramillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JD-Jaramillo/REST-APIs/issues"
+  },
+  "homepage": "https://github.com/JD-Jaramillo/REST-APIs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
