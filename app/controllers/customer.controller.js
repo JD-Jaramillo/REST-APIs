@@ -29,7 +29,7 @@ exports.findAll = (req, res) => {
         if (err)
             res.status(500).send({
                 message:
-                    err.message || "Some error occured while retrieving customers"
+                    err.message || "Some error occurred while retrieving customers."
             });
         else res.send(data);
     });
@@ -54,19 +54,21 @@ exports.findOne = (req, res) => {
 
 // Update a customer identified by the customerId in the request
 exports.update = (req, res) => {
+    // Validate Request
     if (!req.body) {
         res.status(400).send({
-            message: "Content cannot be empty!"
+            message: "Content can not be empty!"
         });
     }
+
     Customer.updateById(
         req.params.customerId,
         new Customer(req.body),
         (err, data) => {
             if (err) {
                 if (err.kind === "not_found") {
-                    res.status(400).send({
-                        message: `Not found Customer with id ${req.params.customerId}`
+                    res.status(404).send({
+                        message: `Not found Customer with id ${req.params.customerId}.`
                     });
                 } else {
                     res.status(500).send({
@@ -76,7 +78,7 @@ exports.update = (req, res) => {
             } else res.send(data);
         }
     );
-};
+}
 
 // Delete a Customer with the specified customerId in the request 
 exports.delete = (req, res) => {
