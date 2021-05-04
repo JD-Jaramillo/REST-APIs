@@ -31,7 +31,6 @@ Customer.findById = (customerId, result) => {
             result(null, res[0]);
             return;
         }
-
         // customer with this id not found 
         result({ kind: "not_found" }, null);
     });

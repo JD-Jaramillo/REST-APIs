@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS rest_apis;
+
+CREATE DATABASE rest_apis;
