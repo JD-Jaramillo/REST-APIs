@@ -1,5 +1,5 @@
 # REST-APIs
-Building REST-API's using express, Node.js and MySQL in order to create a list of customers, update them and/or delete them by ID etc. 
+Building REST-API's using express, Node.js and MySQL in order to create a list of customers and products with the ability to update them and/or delete them by ID etc. 
 
 ## Table of Contents
 
